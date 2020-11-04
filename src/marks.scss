@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.mark-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-family: 'Architects Daughter', cursive;
+        font-size: 100px;
+        font-weight: 900;
+    }
+}
