@@ -11,12 +11,12 @@ class App extends Component {
         }
     }
 
-    playerMove = (event) => {
+    playerMove = (even t) => {
         const { player, squares } = this.state;
         const targetSquareId = event.target.id;
         if(player === 1) {
             this.setState({player: 2}, () => {
-                // wyszukujemy w tablicy squares obiekt pasujący do if event.target.id i w tym obiekcie do właściwośći content dodajemy X lub O w zależności od kolejki
+                // wyszukujemy w tablicy squares obiekt z pasującą wartością id targetSquareId i w tym obiekcie do właściwośći content dodajemy X lub O w zależności od kolejki
             squares.map(element => {
                 return element.id === targetSquareId && element.content.length === 0 ?
                 element.content = 'X' : null;
