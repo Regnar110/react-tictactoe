@@ -1,11 +1,10 @@
 import React from 'react';
 import Square from './Square.js';
-import Xmark from './Xmark.js';
 
-const Board = ({squaresList}) => {
+const Board = ({squaresList, playerMove}) => {
     const createGrid = squaresList.map((item, i) => { // for each nie działało... Dlaczego?? Czekam na odpowiedź ze stack overflow
         return(
-            <Square key={i}id={item.id}><Xmark /></Square>
+            <Square key={i} id={item.id} move={playerMove} />
         )
     })
         return(
