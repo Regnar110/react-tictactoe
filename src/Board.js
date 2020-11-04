@@ -4,7 +4,7 @@ import Square from './Square.js';
 const Board = ({squaresList, playerMove}) => {
     const createGrid = squaresList.map((item, i) => { // for each nie działało... Dlaczego?? Czekam na odpowiedź ze stack overflow
         return(
-            <Square key={i} id={item.id} move={playerMove} />
+            <Square key={i} id={item.id} content={item.content} move={playerMove} />
         )
     })
         return(

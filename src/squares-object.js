@@ -16,7 +16,9 @@ export let squares = [
         content:''
     },
     {
-        id:'sq5', content:''},
+        id:'sq5',
+        content:''
+    },
     {
         id:'sq6',
         content:''
