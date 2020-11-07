@@ -1,10 +1,10 @@
 import React from 'react';
 import Square from './Square.js';
 
-const Board = ({squaresList, playerMove}) => {
-    const createGrid = squaresList.map((item, i) => { // for each nie działało... Dlaczego?? Czekam na odpowiedź ze stack overflow
+const Board = ({squaresList, playerMove, reset}) => {
+    const createGrid = squaresList.map((item, i) => {
         return(
-            <Square key={i} id={item.id} content={item.content} move={playerMove} />
+            <Square key={i} id={item.id} content={item.content} move={playerMove}/>
         )
     })
         return(
@@ -12,6 +12,7 @@ const Board = ({squaresList, playerMove}) => {
                 <div className='squares-container'>
                     {createGrid}
                 </div>
+                <button className='reset-button' onClick={reset}>Reset Game</button>
             </div>
         )
 }

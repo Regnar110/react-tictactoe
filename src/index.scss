@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /*Game header font*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /*X AND O FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); //reset button
 
 body,html {
     width: 100%;
@@ -9,7 +10,6 @@ body,html {
 }
 
 #root {
-    border: 1px solid black;
     padding: 0px;
     margin: 0px;
     
@@ -29,12 +29,13 @@ body,html {
     }
 
     .game-board-container {
+        position: relative;
         margin: 30px;
+        margin-top: 65px;
         display: grid;
         justify-content: center;
         
         .squares-container {
-            border: 3px solid black;
             padding: 5px;
             display: grid;
             grid-template-columns: 100px 100px 100px;
@@ -67,6 +68,28 @@ body,html {
                 background-color: rgba(0, 0, 0, .4);
             }
         }
+    }
+
+    .reset-button {
+        background: transparent;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 30px;
+        font-family: 'Press Start 2P', cursive;
+        transition: 0.5s ease;
+    }
+    
+    .reset-button:hover {
+        transform: scale(1.05);
+    }
+
+    .reset-button:focus {
+        outline: none;
+    }
+
+    .reset-button:active {
+        transform: scale(0.9);
+        outline: none;
     }
 }
 
