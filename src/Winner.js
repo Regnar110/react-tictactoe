@@ -1,28 +1,24 @@
 import React from 'react';
 import './winner.scss';
 
-const Winner = ({Xwin, Owin, Draw}) => {
+const Winner = ({Xwin, Owin}) => {
     const victory = () => {
         const winnerContainer = document.querySelector('.winner-container');
         if(Xwin) {
             winnerContainer.style.height = '60px';
             return (
-                'Player 1(X) won the game \o/!!'
+                'Player 1(X) won the game !!'
             )
         } else if(Owin) {
             winnerContainer.style.height = '60px';
             return (
-                'Player 2(O) won the game \o/!!'
-            )
-        } else if(Draw) {
-            return(
-                'DRAW! What a battle!!'
+                `Player 2(O) won the game !!`
             )
         }
     }
     
     return(
-        <div className='winner-container'><h1>{victory()}</h1></div>
+        <div className='winner-container'>{victory()}</div>
     )
 
 
