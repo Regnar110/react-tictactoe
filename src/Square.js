@@ -4,7 +4,7 @@ import Xmark from './Xmark';
 import './marks.scss';
 
 const Square = ({id, content, move}) => {
-    const createMark = () => { // funkcja dodająca X lub O w zależności od stanu tablicy z obiektami square-objects.
+    const createMark = () => {
         if(content==='X') {
             return (
                 <Xmark />
