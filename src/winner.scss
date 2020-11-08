@@ -3,8 +3,13 @@
 .winner-container {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     height: 0px;
     font-family: 'Press Start 2P', cursive;
     transition: 1s all;
+    margin-top: 30px;
+    font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
